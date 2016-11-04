@@ -32,4 +32,17 @@ describe("TaskQueue", () => {
     await Promise.all([p1, p2, p3]);
     assert.deepEqual(arr, ["b1", "e1", "b2", "e2", "b3", "e3"]);
   });
+
+  it("should work with error", async () => {
+    const target = new Queue();
+
+    target.enqueue(async () => {
+      await delay(10);
+      throw new Error("some error");
+    });
+    const p2 = target.enqueue(async () => {
+    });
+
+    await p2;
+  });
 });
