@@ -1,0 +1,32 @@
+{
+  "name": "@atsushi_suzuki/promise-queue",
+  "version": "0.0.1",
+  "description": "job queue for promise functions",
+  "main": "lib/Queue.js",
+  "types": "lib/Queue.d.ts",
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "tsc",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AtsushiSuzuki/promise-queue.git"
+  },
+  "author": "Atsushi Suzuki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AtsushiSuzuki/promise-queue/issues"
+  },
+  "homepage": "https://github.com/AtsushiSuzuki/promise-queue#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/mocha": "^2.2.32",
+    "@types/node": "^6.0.46",
+    "mocha": "^3.1.2",
+    "typescript": "^2.0.6"
+  }
+}
